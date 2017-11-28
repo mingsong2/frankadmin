@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DataEntry from './components/dataEntry';
+import Route from './Route';
+
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<DataEntry />, document.getElementById('root'));
+ReactDOM.render(<Route />, document.getElementById('root'));
 registerServiceWorker();
