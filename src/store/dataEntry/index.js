@@ -4,7 +4,8 @@ useStrict(true)
 
 class store {
     // 保存分类列表
-    @observable data = "hello mobx";
+    @observable name = "tom";
+    @observable gender = '男';
 
     @action
     getData() {
