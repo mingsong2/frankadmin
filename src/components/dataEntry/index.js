@@ -6,7 +6,13 @@ import {Button} from 'antd';
 @inject('store')
 @observer
 class DataEntry extends Component {
-  
+  constructor(props){
+    super(props);
+    this.state = {
+      "school" : "清华大学",
+      "major" : "电子信息"
+    }
+  }  
   componentDidMount(){
     console.log('componentDidMount');
   }
@@ -30,6 +36,7 @@ class DataEntry extends Component {
       <div className="App">
           <Button type="primary" onClick={this.changeStoreDataByRunInAction}>{this.props.store.dataEntry.name}</Button>
           <Button type="primary" onClick={this.changeStoreDataByAction}>{this.props.store.dataEntry.gender}</Button>
+          
       </div>
     );
   }
